@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gamedoanso</title>
+</head>
+<body>
+<script>
+    let check=function (first, last, number) {
+        let number1= last-Math.round(Math.random()*first);
+        console.log(number1);
+        if(number===number1){
+            return "Chúc mừng bạn đã đoán đúng";
+        }else {
+            return "Đoán sai rồi";
+        }
+    };
+
+    let number2=parseInt(prompt("Nhập vào một số"));
+    let number3=parseInt(prompt("Nhập vào một số"));
+    let number4=parseInt(prompt("Nhập vào đây số bạn đoán"));
+
+    console.log(check(number2,number3,number4));
+
+</script>
+</body>
+</html>
